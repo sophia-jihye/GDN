@@ -1,0 +1,1 @@
+python main.py -dataset msl -save_path_pattern msl -slide_stride 1 -slide_win 5 -batch 32 -epoch 30 -comment msl -random_seed 5 -decay 0 -dim 64 -out_layer_num 1 -out_layer_inter_dim 128 -val_ratio 0.2 -report best -topk 5 -device cpu
