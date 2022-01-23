@@ -2,6 +2,24 @@
 
 Code implementation for : [Graph Neural Network-Based Anomaly Detection in Multivariate Time Series(AAAI'21)](https://arxiv.org/pdf/2106.06947.pdf)
 
+# Conda environment (지혜 씀)
+```
+conda create --name pyg python=3.6
+conda activate pyg
+conda install pytorch==1.5.0 cudatoolkit=10.2 -c pytorch
+
+python -c "import torch; print(torch.__version__)" # 1.5.0
+python -c "import torch; print(torch.version.cuda)" # 10.2
+
+pip install --no-index torch-scatter -f https://pytorch-geometric.com/whl/torch-1.5.0+cu102.html
+pip install --no-index torch-cluster -f https://pytorch-geometric.com/whl/torch-1.5.0+cu102.html
+pip install --no-index torch-spline-conv -f https://pytorch-geometric.com/whl/torch-1.5.0+cu102.html
+pip install torch-geometric==1.5.0
+pip install --no-index torch-sparse -f https://pytorch-geometric.com/whl/torch-1.5.0+cu102.html
+
+#from torch_geometric.nn.inits import glorot, zeros
+```
+
 
 # Installation
 ### Requirements
