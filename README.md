@@ -20,6 +20,11 @@ pip install --no-index torch-sparse -f https://pytorch-geometric.com/whl/torch-1
 #from torch_geometric.nn.inits import glorot, zeros
 ```
 
+# Reproduction (created by Jihye)
+```
+sh run.sh 0 msl
+```
+
 
 # Installation
 ### Requirements
